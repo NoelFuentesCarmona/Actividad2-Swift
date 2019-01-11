@@ -12,6 +12,14 @@
 		8413F6B121E50FEB00F12EC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8413F6AF21E50FEB00F12EC0 /* Main.storyboard */; };
 		8413F6B321E50FEC00F12EC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8413F6B221E50FEC00F12EC0 /* Assets.xcassets */; };
 		8413F6B621E50FEC00F12EC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8413F6B421E50FEC00F12EC0 /* LaunchScreen.storyboard */; };
+		8413F6C021E5106900F12EC0 /* PersonaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413F6BF21E5106900F12EC0 /* PersonaModel.swift */; };
+		8413F6C221E5108500F12EC0 /* ContactoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413F6C121E5108500F12EC0 /* ContactoModel.swift */; };
+		8413F6C521E5114D00F12EC0 /* ContactosPersiste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413F6C421E5114D00F12EC0 /* ContactosPersiste.swift */; };
+		8413F6C821E5175000F12EC0 /* DatosContactoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413F6C721E5175000F12EC0 /* DatosContactoTableViewCell.swift */; };
+		8413F6CC21E51D2300F12EC0 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 8413F6CB21E51D2300F12EC0 /* contact.png */; };
+		8413F6CF21E524A400F12EC0 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413F6CE21E524A400F12EC0 /* ContactDetailsViewController.swift */; };
+		8413F6D121E5459C00F12EC0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413F6D021E5459C00F12EC0 /* Utils.swift */; };
+		8413F6D321E55B3500F12EC0 /* cumple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8413F6D221E55B3500F12EC0 /* cumple.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		8413F6B221E50FEC00F12EC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8413F6B521E50FEC00F12EC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8413F6B721E50FEC00F12EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8413F6BF21E5106900F12EC0 /* PersonaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaModel.swift; sourceTree = "<group>"; };
+		8413F6C121E5108500F12EC0 /* ContactoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoModel.swift; sourceTree = "<group>"; };
+		8413F6C421E5114D00F12EC0 /* ContactosPersiste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosPersiste.swift; sourceTree = "<group>"; };
+		8413F6C721E5175000F12EC0 /* DatosContactoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosContactoTableViewCell.swift; sourceTree = "<group>"; };
+		8413F6CB21E51D2300F12EC0 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contact.png; path = ../../../../Downloads/contact.png; sourceTree = "<group>"; };
+		8413F6CE21E524A400F12EC0 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		8413F6D021E5459C00F12EC0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8413F6D221E55B3500F12EC0 /* cumple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cumple.jpg; path = ../../../../Downloads/cumple.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,62 @@
 		8413F6AA21E50FEB00F12EC0 /* Actividad2 */ = {
 			isa = PBXGroup;
 			children = (
+				8413F6D221E55B3500F12EC0 /* cumple.jpg */,
+				8413F6BD21E50FFD00F12EC0 /* App */,
 				8413F6AB21E50FEB00F12EC0 /* AppDelegate.swift */,
-				8413F6AD21E50FEB00F12EC0 /* ViewController.swift */,
 				8413F6AF21E50FEB00F12EC0 /* Main.storyboard */,
 				8413F6B221E50FEC00F12EC0 /* Assets.xcassets */,
+				8413F6CB21E51D2300F12EC0 /* contact.png */,
 				8413F6B421E50FEC00F12EC0 /* LaunchScreen.storyboard */,
 				8413F6B721E50FEC00F12EC0 /* Info.plist */,
 			);
 			path = Actividad2;
+			sourceTree = "<group>";
+		};
+		8413F6BD21E50FFD00F12EC0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8413F6CD21E5246E00F12EC0 /* Controllers */,
+				8413F6C621E5173100F12EC0 /* Common */,
+				8413F6C321E5112600F12EC0 /* Persistence */,
+				8413F6BE21E5102500F12EC0 /* Models */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8413F6BE21E5102500F12EC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8413F6BF21E5106900F12EC0 /* PersonaModel.swift */,
+				8413F6C121E5108500F12EC0 /* ContactoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8413F6C321E5112600F12EC0 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				8413F6C421E5114D00F12EC0 /* ContactosPersiste.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		8413F6C621E5173100F12EC0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8413F6C721E5175000F12EC0 /* DatosContactoTableViewCell.swift */,
+				8413F6D021E5459C00F12EC0 /* Utils.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8413F6CD21E5246E00F12EC0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8413F6AD21E50FEB00F12EC0 /* ViewController.swift */,
+				8413F6CE21E524A400F12EC0 /* ContactDetailsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8413F6B621E50FEC00F12EC0 /* LaunchScreen.storyboard in Resources */,
+				8413F6D321E55B3500F12EC0 /* cumple.jpg in Resources */,
 				8413F6B321E50FEC00F12EC0 /* Assets.xcassets in Resources */,
+				8413F6CC21E51D2300F12EC0 /* contact.png in Resources */,
 				8413F6B121E50FEB00F12EC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8413F6C221E5108500F12EC0 /* ContactoModel.swift in Sources */,
+				8413F6CF21E524A400F12EC0 /* ContactDetailsViewController.swift in Sources */,
 				8413F6AE21E50FEB00F12EC0 /* ViewController.swift in Sources */,
+				8413F6C521E5114D00F12EC0 /* ContactosPersiste.swift in Sources */,
 				8413F6AC21E50FEB00F12EC0 /* AppDelegate.swift in Sources */,
+				8413F6C821E5175000F12EC0 /* DatosContactoTableViewCell.swift in Sources */,
+				8413F6C021E5106900F12EC0 /* PersonaModel.swift in Sources */,
+				8413F6D121E5459C00F12EC0 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
